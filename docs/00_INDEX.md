@@ -244,24 +244,24 @@ The Work brief must be used together with:
 
 ## 6. Work Output Documents
 
-These do not exist yet. Work should create them after executing the Scenario Bank brief.
+These Scenario Bank outputs completed Work internal QA and product review on 2026-09-28.
 
 ### `content/scenario-bank-v1.md`
-**Status:** Pending Work output.
+**Status:** Available — Approved for Question Production.
 
-Final reviewed candidate Scenario Bank.
+Approved Scenario Bank containing 120 scenarios and the Top 20 Production Candidates. These are approved scenario designs, not finished questions.
 
 ### `content/scenario-coverage-v1.csv`
-**Status:** Pending Work output.
+**Status:** Available — Approved coverage baseline.
 
-Coverage data suitable for quantitative inspection.
+Approved row-level coverage data for the 120-scenario bank, suitable for quantitative inspection.
 
 ### `content/scenario-audit-v1.md`
-**Status:** Pending Work output.
+**Status:** Available — Product review completed.
 
-Duplicate, replacement, bias, and risk analysis.
+Work internal QA record plus duplicate, replacement, bias, risk, targeted-revision, and final product-review outcome.
 
-These outputs should be reviewed before full question production begins.
+Product review was completed on 2026-09-28. Scenario Bank v1 is approved for Question Production.
 
 ---
 
@@ -439,21 +439,16 @@ business-english-toss/
 
 ## 13. Current Next Step
 
-The core planning documents required for the first Work phase are now available.
+The next content phase is the **Question Production Pilot**. Scenario Bank v1 was approved for Question Production on 2026-09-28, but Question Bank production has not started yet.
 
 Recommended sequence:
 
-1. rename any remaining `.txt` files to their final `.md` names
-2. place all files in the repository structure shown above
-3. confirm `AGENTS.md` and `00_INDEX.md` paths are correct
-4. commit the current documents as the source-of-truth baseline
-5. open the same repository/folder in ChatGPT Work
-6. instruct Work to read `docs/00_INDEX.md`
-7. run `docs/work/scenario-bank-120-brief.md`
-8. review the resulting Scenario Bank, coverage, duplicate, and risk outputs
-9. approve or revise the Scenario Bank
-10. only then proceed to large-scale question production
-11. later use the same repository as Codex implementation context
+1. commit the approved Scenario Bank documents as the source-of-truth baseline
+2. define a small Question Production Pilot using approved scenarios, prioritizing the Top 20 Production Candidates
+3. produce and review the pilot questions against the Editorial Guide and Golden Question Set
+4. audit answer-position balance, distractor quality, directness neutrality, explanation brevity, and review suitability
+5. revise and approve the pilot before any large-scale Question Bank production
+6. later use the same repository as Codex implementation context
 
 ---
 
