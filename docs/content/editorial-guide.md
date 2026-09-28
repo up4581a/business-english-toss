@@ -1,4 +1,4 @@
-# Business English Daily Quiz — Editorial Guide v1.2
+# Business English Daily Quiz — Editorial Guide v1.4
 
 ## 1. 학습 목표
 
@@ -111,6 +111,7 @@ Handle It은 이메일 중심으로 만들지 않는다.
 
 ### Question
 - `scenario_text`
+- `source_utterance` — required for Best Revision; the concrete message, draft, or previous utterance to revise
 - `prompt`
 - `option_1`
 - `option_2`
@@ -128,6 +129,7 @@ Handle It은 이메일 중심으로 만들지 않는다.
 ### Learning Asset
 - `key_expression` — optional
 - `expression_note` — optional
+- `save_target` — optional; expression metadata shown through the fixed UI action **[내 표현에 저장]**
 - `tags`
 
 ---
@@ -220,6 +222,14 @@ Direct, concise, firm, diplomatic, empathetic한 표현 중 어느 것도 그 �
 
 Tone 관련 판단 역시 사용할 수 있지만 문제은행 전체를 지배해서는 안 된다.
 
+### 7.1 Actionability vs Tone
+
+정답은 directness나 politeness가 아니라 **operational usefulness**로 구분한다.
+
+예를 들어 priority clarification에서는 단순히 “어느 지시를 따를까요?”라고 묻는 response보다, 각 선택의 실제 consequence를 제시하고 결정을 요청하는 response가 더 나을 수 있다.
+
+이때 정답의 우위는 더 부드럽거나 세련된 tone이 아니라, 상대가 결정하는 데 필요한 정보를 제공한다는 데 있어야 한다.
+
 ---
 
 ## 8. Single-Axis Contrast Rule
@@ -284,6 +294,31 @@ Tone 관련 판단 역시 사용할 수 있지만 문제은행 전체를 지배�
 
 다만 단순 우스운 문장이나 맥락 없는 “나쁜 영어”가 아니라 **실제 잘못된 업무 판단으로 나올 수 있는 표현**이어야 한다.
 
+### 10.4 Target-Customer Plausibility
+
+Distractor의 평가 기준은 추상적인 `competent learner`가 아니라 **제품의 실제 target customer**다.
+
+각 distractor에 대해 다음 질문에 답할 수 있어야 한다.
+
+> **우리 target customer가 실제 업무에서 이 선택지를 고를 법한가?**
+
+문법적으로 자연스럽기만 한 오답은 충분하지 않다. 지나치게 공격적이거나 터무니없어서 즉시 제거되는 선택지도 약한 distractor다.
+
+Difficulty 1에서 명백한 오답을 사용하더라도, 실제 target customer에게서 나올 수 있는 업무 판단이어야 한다.
+
+### 10.5 Unique-Answer Robustness
+
+둘 이상의 선택지가 실제 업무에서 충분히 합리적이면 문항을 수정한다.
+
+정답이 더 나은 이유는 다음 두 가지에 근거해 설명할 수 있어야 한다.
+
+- scenario에 명시된 사실
+- tested English / communication function
+
+단지 더 세련되고, 더 효율적이고, 더 공손하거나, 더 `native-like`하다는 이유만으로 정답을 구분하지 않는다.
+
+**좋은 답과 조금 더 좋은 답을 구분시키는 문제**는 피한다.
+
 ---
 
 ## 11. 주요 Distractor Categories
@@ -346,6 +381,36 @@ Scenario는 **가급적 2~3문장 이내**로 작성한다.
 
 이 정보가 없으면 조직 문화나 개인 스타일에 따라 정답이 달라질 수 있는 문항은 출제하지 않는다.
 
+### 12.1 Scenario Answer Leakage
+
+Scenario가 정답 행동을 사실상 그대로 지시하거나, 사용자가 그 내용을 paraphrase하기만 하면 정답이 되게 만들지 않는다.
+
+Premise는 unique answer에 필요한 사실, authority, constraint를 충분히 제공해야 한다. 그러나 **무엇을 해야 하는지**를 답안처럼 써주어서는 안 된다.
+
+특히 policy, authority, known / unknown facts를 제시할 때 문항이 단순한 policy-following translation task가 되지 않도록 한다.
+
+### 12.2 Policy / Organization-Choice Boundary
+
+정답이 회사 정책, 상업 전략, 고객관리 관행 또는 개인 성향에 따라 달라질 수 있는 경우를 주의한다.
+
+해당 정책이나 권한을 scenario에 명시했더라도, 단순히 **주어진 정책을 따르는 답**을 고르게 하는 문제는 약한 문항으로 본다.
+
+가능한 경우 다음과 같은 **English distinction 자체**가 판단의 핵심이 되도록 설계한다.
+
+- estimate / guarantee / commit
+- fact / assumption
+- request / suggestion
+
+### 12.3 Storyline Naming in Learner-Facing Text
+
+Storyline, project, client, vendor의 고유명사는 기본적으로 내부 continuity를 위한 metadata다.
+
+Learner-facing scenario에서 이름이 이해나 맥락에 필요하지 않으면 제거한다.
+
+이름을 노출할 경우에는 각 문항만 읽어도 그것이 무엇인지 독립적으로 이해할 수 있도록 역할이나 맥락을 함께 제공한다.
+
+Storyline familiarity를 정답에 필요한 prerequisite로 만들지 않는다.
+
 ---
 
 ## 13. Hidden Premise Rule
@@ -361,6 +426,22 @@ Scenario는 **가급적 2~3문장 이내**로 작성한다.
 등의 조건을 scenario에 명시한다.
 
 **Scenario에 제시되지 않은 조직문화, 권한관계, 회사방침을 정답 근거로 사용하지 않는다.**
+
+### 13.1 Risky Admission / Commitment Language
+
+고객이나 외부 상대에게 다음을 넓게 인정하는 표현을 기본 모범답안으로 제시하지 않는다.
+
+- responsibility
+- legal / contractual obligation
+- cause
+- guarantee
+- concession
+
+Scenario가 그 수준의 admission이나 authority를 명시적으로 요구하거나 허용하지 않는 한, **confirmed fact acknowledgement**와 **broader responsibility admission**을 구분한다.
+
+예를 들어 `We missed the agreed date.`와 `We own that.`은 동일하게 취급하지 않는다.
+
+어떤 option도 scenario에 없는 contractual right, liability, blame, guarantee 또는 authority를 만들어내서는 안 된다.
 
 ---
 
@@ -442,6 +523,24 @@ Live communication 문제에서 평가 단위는 원칙적으로 **하나의 자
 - Fill the Expression
 
 Fill the Expression 등 전통적인 영어 퀴즈형은 제품의 핵심 차별성이 약하므로 제한적으로 사용한다.
+
+### 17.1 Best Revision interaction contract
+
+Best Revision은 interaction 안에 이미 존재하는 **concrete English draft / utterance**를 고치는 문제다.
+
+- learner가 고칠 대상은 별도 message, draft, previous utterance 또는 실제 대화 속 이전 발화로 prompt보다 먼저 보여야 한다.
+- production schema에서는 이를 `source_utterance`로 기록한다.
+- source text를 question prompt 안에서 처음 제시한 뒤 고르라고 해서는 안 된다.
+- revision은 source utterance의 business intent를 가능한 한 보존하면서 communication problem을 수정해야 한다.
+- source utterance가 scenario 안에 자연스럽게 존재하지 않으면 Best Revision을 억지로 만들지 않고 Best Response를 사용한다.
+- 긴 영어 대화 전체는 필수가 아니다. 고칠 문장이 interaction 안에 이미 존재한다는 사실이 핵심이다.
+
+### 17.2 Order the Message interaction contract
+
+Order the Message는 실제 **message fragments / response parts**를 올바른 순서로 배열하는 interaction에만 사용한다.
+
+- 완성된 세 response 중 가장 좋은 response를 고르는 문제는 Best Response다.
+- `content_unit: spoken response` 같은 qualifier로 Best Response형 문제를 Order the Message로 재분류하지 않는다.
 
 ---
 
@@ -603,6 +702,11 @@ Golden Set에서는 A/B/C를 동일하게 배분한다.
 - 정답만 유난히 길거나 정보가 많지 않은가?
 - 세 선택지 모두 충분히 자연스러운 영어인가?
 
+### Interaction Contract
+- Best Revision이면 concrete `source_utterance`가 prompt보다 먼저 interaction 안에 존재하는가?
+- Best Revision이 source utterance의 business intent를 가능한 한 보존하며 문제를 수정하는가?
+- Order the Message이면 learner가 실제 message fragments / response parts의 순서를 배열하는가?
+
 ### Learning Value
 - 문법 정오 이상의 판단을 요구하는가?
 - 사용자가 다음 업무에서 재사용할 원칙 또는 표현을 얻는가?
@@ -612,6 +716,14 @@ Golden Set에서는 A/B/C를 동일하게 배분한다.
 - “더 공손한 답 = 정답” 패턴이 아닌가?
 - directness를 이유 없이 감점하지 않았는가?
 - 과도한 hedging을 무조건 좋은 영어로 취급하지 않았는가?
+
+### Final Production Gate
+- Target customer가 각 distractor를 실제 업무에서 선택할 법한가?
+- Scenario에 명시된 사실과 tested English function에 근거해 best answer가 정확히 하나인가?
+- Scenario가 정답을 사실상 누설하고 있지 않은가?
+- 정답이 주로 회사 정책, 개인 성향 또는 문화에 따라 달라지지 않는가?
+- 어떤 option도 scenario에 없는 authority, liability, contractual right, blame 또는 certainty를 만들어내지 않는가?
+- 정답은 단순한 tone이나 polish가 아니라 operational / English reason 때문에 더 나은가?
 
 ### Final Value Test
 - 이 문제를 맞히거나 틀린 뒤, 사용자가 실제 업무 영어에서 무엇을 하나 더 할 수 있게 되는가?

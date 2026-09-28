@@ -244,7 +244,7 @@ The Work brief must be used together with:
 
 ## 6. Work Output Documents
 
-These Scenario Bank outputs completed Work internal QA and product review on 2026-09-28.
+The Scenario Bank and Question Production Pilot outputs completed Work internal QA and product review on 2026-09-28.
 
 ### `content/scenario-bank-v1.md`
 **Status:** Available — Approved for Question Production.
@@ -262,6 +262,16 @@ Approved row-level coverage data for the 120-scenario bank, suitable for quantit
 Work internal QA record plus duplicate, replacement, bias, risk, targeted-revision, and final product-review outcome.
 
 Product review was completed on 2026-09-28. Scenario Bank v1 is approved for Question Production.
+
+### `content/question-pilot-top20.md`
+**Status:** Available — Product Review Passed.
+
+Approved production baseline containing the 20 finished pilot questions, answer screens, and review variants.
+
+### `content/question-pilot-audit.md`
+**Status:** Available — Product Review Passed.
+
+Cross-question audit for the approved pilot against Editorial Guide v1.4. The pilot is approved, and production of the remaining 100 questions is authorized.
 
 ---
 
@@ -439,15 +449,15 @@ business-english-toss/
 
 ## 13. Current Next Step
 
-The next content phase is the **Question Production Pilot**. Scenario Bank v1 was approved for Question Production on 2026-09-28, but Question Bank production has not started yet.
+The Question Production Pilot passed Product Review on 2026-09-28. The approved pilot is the production baseline, and production of the remaining 100 questions is authorized.
 
 Recommended sequence:
 
-1. commit the approved Scenario Bank documents as the source-of-truth baseline
-2. define a small Question Production Pilot using approved scenarios, prioritizing the Top 20 Production Candidates
-3. produce and review the pilot questions against the Editorial Guide and Golden Question Set
-4. audit answer-position balance, distractor quality, directness neutrality, explanation brevity, and review suitability
-5. revise and approve the pilot before any large-scale Question Bank production
+1. use the approved Pilot v3 as the production baseline
+2. produce the remaining 100 questions from the approved Scenario Bank
+3. apply the Editorial Guide v1.4 rules and the pilot audit's production guidance during drafting
+4. run staged QA for answer-position balance, target-customer distractor plausibility, unique-answer robustness, directness neutrality, explanation brevity, and review suitability
+5. resolve any blocking specification conflict before changing authoritative product rules
 6. later use the same repository as Codex implementation context
 
 ---
