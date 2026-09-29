@@ -273,6 +273,21 @@ Approved production baseline containing the 20 finished pilot questions, answer 
 
 Cross-question audit for the approved pilot against Editorial Guide v1.4. The pilot is approved, and production of the remaining 100 questions is authorized.
 
+### `content/question-batch-01.md`
+**Status:** Available — Product Review Passed.
+
+Approved Batch 01 production file containing 20 finished questions, answer screens, and review variants. These 20 questions are approved for the Question Bank.
+
+### `content/question-batch-01-review.md`
+**Status:** Available — Product Review Passed.
+
+Completed answer-hidden Product Review view for Batch 01.
+
+### `content/question-batch-01-audit.md`
+**Status:** Available — Product Review Passed.
+
+Work internal QA record, targeted-revision history, and final Product Review outcome for Batch 01. Production of the remaining 80 questions is authorized.
+
 ---
 
 ## 7. Design Backlog
@@ -449,12 +464,12 @@ business-english-toss/
 
 ## 13. Current Next Step
 
-The Question Production Pilot passed Product Review on 2026-09-28. The approved pilot is the production baseline, and production of the remaining 100 questions is authorized.
+The Question Production Pilot passed Product Review on 2026-09-28, and Batch 01 subsequently passed Product Review with 20 questions approved for the Question Bank. Production of the remaining 80 questions is authorized but has not started.
 
 Recommended sequence:
 
-1. use the approved Pilot v3 as the production baseline
-2. produce the remaining 100 questions from the approved Scenario Bank
+1. use the approved Pilot v3 and approved Batch 01 as the production baseline
+2. produce the remaining 80 questions from the approved Scenario Bank
 3. apply the Editorial Guide v1.4 rules and the pilot audit's production guidance during drafting
 4. run staged QA for answer-position balance, target-customer distractor plausibility, unique-answer robustness, directness neutrality, explanation brevity, and review suitability
 5. resolve any blocking specification conflict before changing authoritative product rules
